@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    div{
+        background-color: rgb(231, 229, 229);
+        padding: 10px;
+    }
+    table,th,td{
+border: 1px solid;
+border-collapse: collapse;
+
+
+    }
+</style>
+<body>
+    
+
+       
+  <div>
+    <caption><i>A test table with merged cells</i></caption>
+    <table >
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Average</th>
+                <th rowspan="2">Red eyes</th>
+                <!-- <td>0.003</td>
+                <td>40%</td> -->
+            </tr>
+            <tr >
+              <!-- <td></td> -->
+                <th >height</th>
+                <th>weight</th>
+                <!-- <td>42%</td> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Males</th>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <th>Females</th>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>42%</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+ 
+</body>
+</html>

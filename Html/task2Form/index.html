@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+    *{
+        outline: none;
+    }
+</style>
+<body>
+   <section style="height: 100vh;display: flex;flex-direction: column; align-items: center; justify-content: center;"> 
+   
+    <form action="" style="background-color: rgb(238, 238, 238);padding: 50px; display: flex; flex-direction: column;gap: 10px;width: 30%;">
+        <h3 style="text-align: center;text-decoration:underline;">Registration Form</h3>
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <label for="name">First Name</label>
+            <input  style="margin-left: 40px;padding: 6px;width: 60%" type="text" id="name" placeholder="first name" required>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <label for="lastname">Last Name</label>
+            <input style="margin-left: 40px;padding: 6px;width: 60%;" type="text" id="lastname" placeholder="last name" required>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <label for="nickname">Nick Name</label>
+            <input style="margin-left: 40px;padding: 6px;width: 60%" type="text" id="nickname" placeholder="nick name" required>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <label for="e-mail">E-mail</label>
+            <input style="margin-left: 40px;padding: 6px; width: 60%" type="email" id="e-mail" placeholder="e-mail" required>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <label for="password">Password</label>
+            <input style="margin-left: 40px;padding: 6px; width: 60%" type="password" id="password" placeholder="password" required>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <label for="date">Date of Birth</label>
+            <input style="margin-left: 40px;padding: 6px; width: 60%" type="date" id="date" placeholder="first name" required>
+        </div>
+     <div style="display: flex;gap: 40px; align-items: center;">
+       <p>Gender</p>
+        <div style="margin-left: 70px;">
+        <label for="radio">Male</label>
+        <input type="radio" name="gender" id="radio" >
+        <label for="radio">Female</label>
+        <input type="radio" name="gender" id="radio" >
+        <label for="radio">Others</label>
+        <input type="radio" name="gender" id="radio" >
+        </div>
+     </div>
+     <div style="display: flex; align-items: center; justify-content: space-between;">
+        <label for="mobile">Mobile</label>
+        <input style="margin-left: 40px;padding: 6px;width: 60%;" type="tel" id="mobile" placeholder="mobile" required>
+    </div>
+    <div style="display: flex; ; justify-content: space-between;">
+        <label for="address">Address</label>
+       <textarea rows="5"  style="margin-left: 40px;padding: 6px;width: 60%; resize: none;"name="" id="address" ></textarea>
+    </div>
+  <div>
+   <div style="display: flex;justify-content: center; gap: 20px;">
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+   </div>
+  </div>
+    </form>
+   </section> 
+
+<!-- ! -->
+   <!-- <section >
+   
+    <form action="">
+        <h3 ><u>Registration Form</u></h3>
+        <div >
+            <label for="name">First Name</label>
+            <input   type="text" id="name" placeholder="first name" required>
+        </div>
+        <div >
+            <label for="lastname">Last Name</label>
+            <input  type="text" id="lastname" placeholder="last name" required>
+        </div>
+        <div>
+            <label for="nickname">Nick Name</label>
+            <input type="text" id="nickname" placeholder="nick name" required>
+        </div>
+        <div >
+            <label for="e-mail">E-mail</label>
+            <input type="email" id="e-mail" placeholder="e-mail" required>
+        </div>
+        <div >
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="password" required>
+        </div>
+        <div >
+            <label for="date">Date of Birth</label>
+            <input  type="date" id="date" placeholder="first name" required>
+        </div>
+     <div >
+       <p>Gender</p>
+        <div >
+        <label for="radio">Male</label>
+        <input type="radio" name="gender" id="radio" >
+        <label for="radio">Female</label>
+        <input type="radio" name="gender" id="radio" >
+        <label for="radio">Others</label>
+        <input type="radio" name="gender" id="radio" >
+        </div>
+     </div>
+     <div >
+        <label for="mobile">Mobile</label>
+        <input  type="tel" id="mobile" placeholder="mobile" required>
+    </div>
+    <div >
+        <label for="address">Address</label>
+       <textarea rows="5" cols="20" id="address" ></textarea>
+    </div>
+  <div>
+   <div >
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+   </div>
+  </div>
+    </form>
+   </section> -->
+
+</body>
+</html>
