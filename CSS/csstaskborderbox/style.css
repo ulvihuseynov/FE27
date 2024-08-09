@@ -1,0 +1,43 @@
+.container{
+/* display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column; */
+height: 50vh;
+margin: 100px 350px 0 ;
+
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: brown;
+    margin-bottom: 50px;
+}
+.box1{
+    background-color: rgb(255, 59, 232);
+    border: 5px solid;
+    /* width: 500px; */
+    height: 350px;
+    
+}
+.box2{
+    background-color: yellow;
+    border: 5px dotted;
+    width: 80%;
+    height: 200px;
+    margin:30px 60px 0;
+
+}
+
+.box3{
+    background-color: aqua;
+    border: 5px dashed;
+    width: 80%;
+    height: 100px;
+    margin:0 60px 50px;
+}
+p{
+    font-size: 18px;
+   font-weight: 600; 
+   padding:0 6px;
+}

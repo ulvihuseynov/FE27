@@ -1,0 +1,36 @@
+section {
+  padding: 10px;
+}
+
+.one {
+  margin: auto;
+  border: 4px dashed rgb(199, 131, 4);
+  width: 40%;
+  background-color: rgb(255, 255, 168);
+  padding: 10px;
+  position: relative;
+ 
+}
+
+.two {
+  background-color: rgb(149, 246, 251);
+  width: 25%;
+  padding: 10px;
+  margin: 40px;
+  /* border: 4px double rgb(199, 131, 4); */
+  border-top: 10px double rgb(199, 131, 4);
+  border-bottom: 10px double rgb(199, 131, 4);
+}
+.three {
+  background-color: rgb(208, 189, 168);
+  width: 35%;
+  padding: 10px;
+  border-top: 10px rgb(255, 214, 161) solid;
+  border-left: 10px rgb(255, 214, 161) solid;
+  border-bottom: 10px rgb(152, 86, 0) solid;
+  border-right: 10px rgb(152, 86, 0) solid;
+  margin: auto;
+}
+hr{
+    border-top: 4px solid rgb(178, 178, 178);
+}
