@@ -6,6 +6,7 @@
   .menu-bar {
     display: block;
   }
+  
   .logo {
     font-size: 20px;
   }
@@ -23,4 +24,5 @@
   .menu-bar {
     display: none;
   }
+ 
 }
