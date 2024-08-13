@@ -1,0 +1,26 @@
+@media screen and (max-width: 970px) {
+  .nav-list,
+  .sign-in {
+    display: none;
+  }
+  .menu-bar {
+    display: block;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .intro-box h1 {
+    font-size: 20px;
+  }
+  p.about-info {
+    font-size: 14px;
+  }
+  .btn-group button {
+    padding: 10px 20px;
+  }
+}
+@media screen and (min-width: 970px) {
+  .menu-bar {
+    display: none;
+  }
+}

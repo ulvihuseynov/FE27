@@ -1,0 +1,172 @@
+@import url(./reset.css);
+@import url(./layout.css);
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  background-color: rgb(13, 22, 51);
+  font-family: "Poppins", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+.logo-box {
+  display: flex;
+  gap: 50px;
+}
+
+.logo,.login,nav ul li a {
+  color: white;
+}
+.join {
+  color: white;
+  background-color: rgb(41, 166, 204);
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+/** cards-section */
+.cards {
+  margin: 60px 0;
+}
+.intro-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 80px 0 60px;
+}
+.intro-box div.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.welcome {
+  color: rgb(41, 166, 204);
+}
+.intro-box h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  width: 60%;
+  line-height: 1.4;
+}
+.intro-box div.box p.about-info {
+  text-align: center;
+  width: 60%;
+}
+.intro-box p.about-info,
+.get-Quote a {
+  color: white;
+}
+.btn-group button {
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+.btn-group .get-Quote {
+  background-color: rgb(41, 166, 204);
+}
+.btn-group .learn-more {
+  background-color: transparent;
+  border: 1px solid rgb(41, 166, 204);
+}
+.btn-group .learn-more a {
+  color: rgb(41, 166, 204);
+}
+.card-box {
+  background-color: white;
+  padding: 40px 20px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.p-10 {
+  padding: 10px;
+}
+.card-box span {
+  background-color: hsl(39, 100%, 90%);
+  color: orangered;
+  padding: 20px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.card-box span i {
+  font-size: 22px;
+}
+
+.card-box h3 {
+  margin: 40px 0;
+  position: relative;
+}
+.card-box h3::after {
+  content: "  ";
+  border: 2px solid orange;
+  width: 40px;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+}
+.online-course span {
+  background-color: hsl(84, 100%, 85%);
+  color: green;
+}
+
+.payment:hover {
+  background-color: rgb(36, 178, 254);
+  color: white;
+}
+.payment span {
+  background-color: rgb(195, 234, 255);
+  color: rgb(36, 178, 254);
+  transition: all 0.5s;
+}
+.payment:hover span {
+  background-color: white;
+  color: rgb(110, 202, 252);
+}
+.menu-bar i {
+  font-size: 26px;
+  color: white;
+}
+
+.res-navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(0, 34, 136);
+  padding: 0 50px;
+
+  justify-content: center;
+  align-items: center;
+}
+.res-navbar span {
+  color: white;
+  font-size: 24px;
+  padding-left: 60px;
+}
+.nav-join {
+  color: white;
+}
+.responsive-menu,
+.res-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.res-login {
+  gap: 20px;
+}

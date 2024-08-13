@@ -1,0 +1,128 @@
+@import url(./reset.css);
+@import url(./layout.css);
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: poppins;
+    
+   
+}
+header{
+    border-bottom: 2px solid;
+    padding-bottom: 30px;
+  /* margin: 10px 30px; */
+}
+img{
+    width: 120px;
+    height: 120px;
+}
+.logo-content{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+   
+}
+.logo{
+    display: flex;
+align-items: center;
+/* width: 250px; */
+}
+.logo p{
+    
+    width: 10%;
+    font-size: 16px;
+    margin: 50px 20px 0 0;
+    color: rgb(31, 173, 229);
+}
+.logo-content h1{
+ 
+    font-size: 44px;
+    color: rgb(172, 172, 172);
+    font-weight: 400;
+    /* text-align: center; */
+   
+}
+.nav-list{
+    display: flex;
+    /* gap: 40px; */
+    justify-content: space-between;
+    margin: 50px 0  50px 50px;
+}
+.nav-list li{
+    list-style-type: none;
+}
+.nav-list li a{
+    font-weight: 600;
+    font-size: 24px;
+    color:  rgb(3, 152, 211);
+    text-decoration: underline;
+}
+.slider{
+    padding: 20px 0;
+    background: linear-gradient(to right,rgb(5, 205, 205) 0%,rgb(221, 221, 221) 20%);
+}
+.slider p{
+    font-size: 40px;
+    text-align: center;
+    color: gray;
+    position: relative;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+span{
+  margin-top: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: gray;
+    cursor: pointer;
+}
+/** section-about */
+.about-section{
+    margin: 60px 0;
+}
+.card-box{
+    padding: 10px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.card-box ul li{
+    padding: 16px;
+  list-style-position: inside;
+}
+.card-box h3{
+    font-size: 24px;
+}
+.card-box h3,.card-box p{
+    text-align: center;
+    padding:10px 0 20px;
+}
+
+.bg-event{
+    background-color: rgb(226, 224, 255);
+}
+.bg-dentist{
+   background-color: rgb(255, 197, 239); 
+}
+.bg-quick{
+    background-color: rgb(235, 204, 235);
+}
+input[type="text"]{
+    display: block;
+    width: 90%;
+    outline: none;
+    padding: 4px;
+    /* margin: 10px 0 10px; */
+    border: none;
+}
+
+[class="check"]{
+    display: flex;
+    gap: 10px;
+}
