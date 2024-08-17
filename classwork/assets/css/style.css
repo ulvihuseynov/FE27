@@ -1,0 +1,55 @@
+@import url(./reset.css);
+@import url(./layout.css);
+
+
+.our-features{
+    background-color: #f0f0f0;
+    margin: 60px 0;
+    
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+.card-header,.card-about p{
+    text-align: center;
+}
+.card-box{
+    box-shadow: 0px 2px 2px 2px rgb(224, 224, 224);
+    padding: 30px;
+    border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #ffffff;
+   
+}
+.bg-image{
+    background-image: url('https://png.pngtree.com/png-vector/20240121/ourmid/pngtree-cute-real-school-boy-white-background-png-image_11510933.png');
+    position: relative;
+   z-index: 2;
+   background-size: cover;
+   overflow: hidden;
+}
+.bg-image::after{
+    content: " ";
+    position: absolute;
+    background-color: rgba(24, 23, 23, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -4;
+  
+ 
+}
+.card-header h3{
+font-size: 24px;
+margin: 10px 0;
+/* color: #ffffff; */
+}
+.bg-image h3{
+    color: #f0f0f0;
+}
+.bg-image p{
+    color: #ffffff;
+}
