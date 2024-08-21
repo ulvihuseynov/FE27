@@ -6,6 +6,9 @@
 .p-16{
     padding: 16px;
 }
+.d-flex{
+    display: flex;
+}
 .row{
     display: flex;
     flex-wrap:wrap ;
@@ -23,6 +26,9 @@
 .items-center{
     align-items: center;
  
+}
+.gap-20{
+    gap: 20px;
 }
 
 @media (min-width:1200px) {
