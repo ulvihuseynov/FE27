@@ -70,7 +70,7 @@ background: linear-gradient(to right, rgb(230, 230, 230),rgb(236, 233, 233));
     border: 1px solid;
     background-color: #f6f6f6;
     box-shadow: 1px 2px 2px 2px #e6e6e6;
-    height: 450px;
+   
 
 }
 .news-content{
@@ -90,6 +90,11 @@ p.news-info{
     font-weight: 600;
     font-size: 18px;
     margin: 16px 0 40px;
+    text-overflow: ellipsis;
+
+  /* Needed to make it work */
+  overflow: hidden;
+  white-space: nowrap;
 }
 p.news-name{
  color: green;
