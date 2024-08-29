@@ -1,3 +1,44 @@
 {
+  "diffEditor.renderSideBySide": false,
+  "workbench.editor.enablePreview": false,
+  "files.autoSave": "afterDelay",
+  "[html]": {
+      "editor.suggest.insertMode": "replace",
+      "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "vscode-edge-devtools.webhint": false,
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "git.enableSmartCommit": true,
+  "editor.fontSize": 16,
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.accessibilitySupport": "off",
+  
+  
+  "liveSassCompile.settings.formats": [
+      {
+          "format": "expanded",
+          "extensionName": ".css",
+          "savePath": "/SCSS/assets"
+      }
+  ],
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.autoprefix": [
+      "> 1%",
+      "last 2 versions"
+  ],
   "liveServer.settings.port": 5501
 }

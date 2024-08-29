@@ -1,0 +1,22 @@
+header{
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo-navbar{
+            display: flex;
+            align-items: center;
+        .nav-list{
+            display: flex;
+            gap: 30px;
+        }
+        .action{
+            display: flex;
+            .social-icons{
+                ul{
+                display: flex;
+            }}
+        }
+    }
+}
+}
