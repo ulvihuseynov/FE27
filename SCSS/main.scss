@@ -1,9 +1,15 @@
+@import 'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap';
+
+
 @import './assets/sass/base/reset';
 
 @import './assets/sass/utils/variable';
 @import './assets/sass/utils/mixin';
 
+@import './assets/sass/layout/layout';
+
 @import './assets/sass/component/navbar';
 
-@import './assets/sass/layout/layout'
+
 

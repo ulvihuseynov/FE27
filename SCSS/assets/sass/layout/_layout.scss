@@ -1,7 +1,11 @@
 .container{
-    width: 85%;
+    width: 90%;
     // max-width: 1140px;
     margin-inline: auto;
+   
+}
+body{
+    font-family: $font-Rubik;
 }
 .p-16{
     padding: 16px;

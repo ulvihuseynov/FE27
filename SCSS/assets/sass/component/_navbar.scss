@@ -1,22 +1,123 @@
+body{
+    position: relative;
+  
+&::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}    
+   
+
 header{
+  
     nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        // position: fixed;
+        background-color: $secondary-color;
+        
         .logo-navbar{
             display: flex;
             align-items: center;
+            justify-content: center;
+            gap: 50px;
         .nav-list{
             display: flex;
             gap: 30px;
-        }
+     
+            li{     
+                a{
+                    line-height: 24px;
+                    color: #040E27;
+                    transition: all 0.9s;
+                    &:hover{
+color: $green-color;
+                    }}}
+                  .dropdown{
+position: relative;
+
+i{
+    font-size: 10px;
+}
+
+&:hover{
+    .dropdown-list{
+        display: block;
+    }
+}
+
+
+                    .dropdown-list{
+                        padding: 10px 40px 10px 10px;
+                       
+position: absolute;
+top: 40px;
+background-color: $secondary-color;
+width:200px;
+font-size: 14px;
+display: none;
+box-shadow: 1px 1px 1px 1px rgb(230, 230, 230);
+
+li{
+    a{
+        color: $primary-color; 
+    }
+}
+                    }
+                  }  
+                    
+                
+            
+        }}
         .action{
             display: flex;
+            gap: 40px;
+            align-items: center;
+            .phone-number{
+                span{
+                    i{
+                        color: $third-color;
+                    }
+                }
+                a{
+                    color: $primary-color;
+                }
+            }
             .social-icons{
                 ul{
                 display: flex;
+              gap: 10px; 
+              li{
+                a{
+                    color: $icon-color;
+                    &:hover{
+                        color: $third-color;
+                    }
+                }
+              }
             }}
-        }
+            .search-container{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               padding: 30px;
+                background-color: $third-color;
+                cursor: pointer;
+                span{
+                    i{
+                        color: $secondary-color;
+                    }
+                }
+            }
+        
     }
 }
+.search-box{
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    transform: translate(-50%,-50%);
+    z-index: 19;
 }
+}}
