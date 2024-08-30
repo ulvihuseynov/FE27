@@ -6,6 +6,7 @@ searchContainer.addEventListener("click",()=>{
     searchBox.style.top="50%"
     searchBox.style.left="50%"
     const body=document.querySelector("body")
-    body.style.backgroundColor="black"
-    // body.classList.add("blurred")
+    // body.style.filter="blur(20px)"
+    body.classList.toggle("blurred")
+    // body.style.background="black"
 })
