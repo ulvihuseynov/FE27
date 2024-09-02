@@ -740,3 +740,110 @@ header .navbar-container nav .action .search-container span i {
 .recent-item .item-content-box .info {
   font-size: 22px;
 }
+
+#video-section {
+  background-image: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg");
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#video-section .video-content-box .video-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+#video-section .video-content-box .video-content h4 {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 80px;
+  color: #ffffff;
+  line-height: 90px;
+  font-weight: 500;
+}
+#video-section .video-content-box .video-content a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: #1EC6B6;
+  border: none;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+#video-section .video-content-box .video-content a i {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+#suggestion {
+  padding: 150px 0;
+}
+#suggestion .suggestion-item {
+  text-align: center;
+}
+#suggestion .suggestion-item h5 {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 20px 0 14px;
+}
+#suggestion .suggestion-item p {
+  line-height: 1.8;
+}
+
+#person-slider {
+  background-color: rgb(245, 245, 245);
+}
+#person-slider .swiper {
+  width: 600px;
+  height: 400px;
+}
+#person-slider .swiper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+#person-slider .swiper .swiper-slide .person-header {
+  position: relative;
+}
+#person-slider .swiper .swiper-slide .person-header .icon-box {
+  font-size: 34px;
+  position: absolute;
+  background-color: #1EC6B6;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #ffffff;
+  bottom: 0;
+  right: 0;
+  padding-top: 10px;
+}
+#person-slider .swiper .swiper-slide .person-info-content .person-info {
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #212520;
+}

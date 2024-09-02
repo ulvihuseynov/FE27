@@ -1,0 +1,14 @@
+#suggestion{
+    padding: 150px 0;
+    .suggestion-item{
+      text-align: center;
+        h5{
+            font-size: 22px;
+            font-weight: $fw-400;
+            margin: 20px 0 14px;
+        }
+        p{
+            line-height: 1.8;
+        }
+    }
+}

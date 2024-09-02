@@ -1,0 +1,38 @@
+#person-slider{
+    // background-color: $icon-color;
+    background-color: rgb(245, 245, 245);
+    .swiper {
+        width: 600px;
+        height: 400px;
+        .swiper-slide{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+           text-align: center;
+           
+           .person-header{
+            position: relative;
+           .icon-box{
+            font-size: 34px;
+            position: absolute;
+            background-color: $green-color;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+           color: $secondary-color;
+          bottom: 0;
+           right: 0;
+           padding-top: 10px;
+           }}
+           .person-info-content{
+            .person-info{
+                margin: 20px 0;
+                font-size: 18px;
+line-height: 1.6;
+            }
+            
+           }
+        }
+      }
+}
