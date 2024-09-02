@@ -1,0 +1,18 @@
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 20px;
+
+  flex-direction: column;
+  text-align: center;
+  h3 {
+    font-size: 32px;
+    font-weight: $fw-400;
+  }
+  p {
+    width: 50%;
+    margin: 2% 0 4% 0;
+    color: $icon-color;
+  }
+}

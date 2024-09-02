@@ -1,0 +1,58 @@
+#travel-where {
+  background-color: $primary-color;
+  padding: 50px 0;
+
+  .travel-heading {
+    h4 {
+      font-size: 24px;
+      line-height: 28.8px;
+      color: $secondary-color;
+      margin-right: 30px;
+    }
+  }
+  .input-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    form {
+      display: flex;
+      gap: 10px;
+      input,
+      select {
+        height: 50px;
+        border: 1px solid $icon-color;
+        border-radius: 5px;
+        outline: none;
+        width: 220px;
+        background-color: transparent;
+        padding: 4px 0 4px 15px;
+        color: $secondary-color;
+        font-size: 16px;
+        opacity: 0.7;
+        &::placeholder {
+          color: $secondary-color;
+          font-size: 16px;
+          opacity: 0.7;
+        }
+      }
+      option {
+        color: $primary-color;
+      }
+      button {
+        height: 50px;
+        width: 130px;
+
+        background-color: $third-color;
+        color: $secondary-color;
+        border-radius: 5px;
+        padding: 13px 39px;
+        font-weight: $fw-600;
+        transition: all 0.5s;
+        &:hover {
+          background-color: $green-color;
+        }
+      }
+    }
+  }
+}

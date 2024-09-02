@@ -1,5 +1,5 @@
 .container{
-    width: 90%;
+    width: 75%;
     // max-width: 1140px;
     margin-inline: auto;
    
@@ -10,11 +10,16 @@ body{
 .p-16{
     padding: 16px;
 }
+.p-24{
+    padding: 24px;
+}
 .row{
     display: flex;
     flex-wrap:wrap ;
 }
-
+.col-8{
+    width: calc(100%/12*8);
+}
 .col-12{
     width: 100%;
 }

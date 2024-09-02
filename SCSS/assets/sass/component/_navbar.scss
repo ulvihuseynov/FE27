@@ -1,23 +1,31 @@
-body{
-    position: relative;
+// body{
+//     position: relative;
   
-&::before{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-   filter: blur(0);
-   z-index: -1;
-}    
+// &::before{
+//     position: absolute;
+//     height: 100%;
+//     width: 100%;
+//    filter: blur(0);
+//    z-index: -1;
+// }    
    
 
 header{
   
+.navbar-container{
+    padding-left: 4%;
+    
     nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // position: fixed;
+       padding-left: 4%;
         background-color: $secondary-color;
+        position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
         
         .logo-navbar{
             display: flex;
@@ -41,13 +49,14 @@ position: relative;
 
 i{
     font-size: 10px;
+    opacity: .5;
 }
 
-&:hover{
-    .dropdown-list{
-        display: block;
-    }
-}
+// &:hover{
+//     .dropdown-list{
+//         display: block;
+//     }
+// }
 
 
                     .dropdown-list{
@@ -60,7 +69,7 @@ width:200px;
 font-size: 14px;
 display: none;
 box-shadow: 1px 1px 1px 1px rgb(230, 230, 230);
-
+z-index: 1937;
 li{
     a{
         color: $primary-color; 
@@ -77,19 +86,32 @@ li{
             gap: 40px;
             align-items: center;
             .phone-number{
+                position: relative;
+                &::after{
+                    content: " ";
+                    width: 1px;
+                    height: 24px;
+                    background-color: $primary-color;
+                    position: absolute;
+                    right: -20px;
+                    opacity: .1;
+                }
                 span{
                     i{
                         color: $third-color;
+                        
                     }
                 }
                 a{
                     color: $primary-color;
+                    padding-left:6px;
                 }
             }
             .social-icons{
                 ul{
                 display: flex;
-              gap: 10px; 
+                padding-left: 10px;
+              gap: 30px; 
               li{
                 a{
                     color: $icon-color;
@@ -103,7 +125,7 @@ li{
                display: flex;
                justify-content: center;
                align-items: center;
-               padding: 30px;
+               padding: 40px;
                 background-color: $third-color;
                 cursor: pointer;
                 span{
@@ -115,11 +137,13 @@ li{
         
     }
 }
-.search-box{
-    // position: absolute;
-    top: -10%;
-    left: -10%;
-    transform: translate(-50%,-50%);
-    z-index: 19;
 }
-}}
+// .search-box{
+//     // position: absolute;
+//     top: -10%;
+//     left: -10%;
+//     transform: translate(-50%,-50%);
+//     z-index: 19;
+// }
+}
+
