@@ -307,6 +307,11 @@ header .navbar-container nav .logo-navbar .nav-list {
   display: flex;
   gap: 30px;
 }
+@media (max-width: 1060px) {
+  header .navbar-container nav .logo-navbar .nav-list {
+    display: none;
+  }
+}
 header .navbar-container nav .logo-navbar .nav-list li a {
   line-height: 24px;
   color: #040E27;
@@ -350,6 +355,11 @@ header .navbar-container nav .action {
 header .navbar-container nav .action .phone-number {
   position: relative;
 }
+@media (max-width: 1060px) {
+  header .navbar-container nav .action .phone-number {
+    display: none;
+  }
+}
 header .navbar-container nav .action .phone-number::after {
   content: " ";
   width: 1px;
@@ -359,12 +369,22 @@ header .navbar-container nav .action .phone-number::after {
   right: -20px;
   opacity: 0.1;
 }
+@media (max-width: 1260px) {
+  header .navbar-container nav .action .phone-number::after {
+    display: none;
+  }
+}
 header .navbar-container nav .action .phone-number span i {
   color: #ff4A52;
 }
 header .navbar-container nav .action .phone-number a {
   color: #040E27;
   padding-left: 6px;
+}
+@media (max-width: 1260px) {
+  header .navbar-container nav .action .social-icons {
+    display: none;
+  }
 }
 header .navbar-container nav .action .social-icons ul {
   display: -webkit-box;
@@ -383,18 +403,71 @@ header .navbar-container nav .action .search-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 40px;
   background-color: #ff4A52;
   cursor: pointer;
 }
+@media (max-width: 1060px) {
+  header .navbar-container nav .action .search-container {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 header .navbar-container nav .action .search-container span i {
   color: #ffffff;
+}
+header .mobile-menu {
+  display: none;
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  right: 20px;
+  background-color: gray;
+}
+@media (max-width: 1060px) {
+  header .mobile-menu {
+    display: block;
+  }
+}
+header .mobile-menu .open-menu {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+  color: #ffffff;
+}
+header .mobile-menu .open-menu p {
+  background-color: #040E27;
+  padding: 10px 14px;
+  font-weight: 600;
+}
+header .mobile-menu .open-menu p i {
+  padding-left: 10px;
+}
+header .mobile-menu .mobile-list {
+  margin: 20px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+}
+header .mobile-menu .mobile-list.toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .mobile-menu .mobile-list li a {
+  color: #ffffff;
+}
+header .mobile-menu .mobile-list .mobile-dropdown .mobile-dropdown-list {
+  margin-top: 4px;
 }
 
 .card-header {
@@ -424,6 +497,9 @@ header .navbar-container nav .action .search-container span i {
   color: #AAB1B7;
 }
 
+.slide-section {
+  height: 100vh;
+}
 .slide-section .slider {
   width: 100%;
   position: relative;
@@ -439,7 +515,7 @@ header .navbar-container nav .action .search-container span i {
 }
 .slide-section .slider .slides .slide .slide-content {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -450,6 +526,7 @@ header .navbar-container nav .action .search-container span i {
   line-height: 75px;
   color: #ffffff;
   font-family: "Nothing You Could Do", cursive;
+  font-weight: 500;
 }
 .slide-section .slider .slides .slide .slide-content p {
   font-size: 20px;
@@ -644,6 +721,84 @@ header .navbar-container nav .action .search-container span i {
   color: #ffffff;
   padding: 8px 12px;
   border-radius: 50px;
+}
+
+#subscribe {
+  background: url("https://images.unsplash.com/photo-1491554150239-a9062e24de5c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJveSUyMHdpdGglMjBuYXR1cmV8ZW58MHx8MHx8fDA%3D");
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  margin: 10% 0;
+}
+#subscribe::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+}
+#subscribe .subscribe-content {
+  position: relative;
+  z-index: 1;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#subscribe .subscribe-content .newsletter-heading {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+#subscribe .subscribe-content .newsletter-info {
+  color: #AAB1B7;
+}
+#subscribe .subscribe-form {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#subscribe .subscribe-form input {
+  height: 50px;
+  padding: 1px 2px 1px 15px;
+  width: 55%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+#subscribe .subscribe-form button {
+  border-radius: 5px;
+  height: 50px;
+  padding: 13px 10px;
+  background-color: #ff4A52;
+  width: 20%;
+  font-weight: 600;
+  color: #ffffff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border: none;
+}
+#subscribe .subscribe-form button:hover {
+  background-color: #1EC6B6;
 }
 
 .popular-places-item {
@@ -846,4 +1001,5 @@ header .navbar-container nav .action .search-container span i {
 
 footer {
   background-color: #212520;
+  padding: 115px 0 129px 0;
 }
