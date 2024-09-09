@@ -1,4 +1,73 @@
 footer{
     background-color: #212520;
     padding: 115px 0 129px 0;
+   
+    .footer-item{
+      ul {
+        
+        li{
+      
+        a{
+          color:  $icon-color;  
+          font-size: 14px;
+          padding-bottom: 14px;
+          display: inline-block;
+          transition: all .4s;
+          &:hover{
+            color: $third-color; 
+          }
+        }
+        }
+      }
+      .logo-container{
+        margin-bottom: 45px;
+      }
+      p{
+        color: $secondary-color;
+        margin-bottom: 45px;
+        font-size: 20px;
+      }
+    .travel-info{
+       margin-bottom: 45px;
+        li{
+          color:  $icon-color;  
+          font-size: 14px;
+          a{
+            color:  $icon-color;  
+            font-size: 14px;
+          }
+        }
+    }
+    .social-list{
+      display: flex;
+      gap: 20px;
+        li{
+           a{
+            color:  $icon-color;  
+            font-size: 14px;
+            transition: .4s all;
+&:hover{
+  color: $third-color;
+}
+           }
+        }
+    }
+    .popular-contries{
+      display: flex;
+      gap: 50px;
+    }
+    .social-img{
+      ul{
+        display: flex;
+        gap: 12px;
+        li{
+          a{
+            img{
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+}
 }

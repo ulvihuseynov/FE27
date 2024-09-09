@@ -17,6 +17,12 @@
         color: $secondary-color;
         line-height: 90px;
         font-weight: $fw-500;
+        @include respond-to(tablet){
+            font-size: 56px;
+        }
+        @include respond-to(mobile){
+            font-size: 36px;
+        }
     }
     a{
        display: inline-flex;
@@ -28,7 +34,10 @@
         border: none;
         border-radius: 50%;
         margin-top: 30px;
-       
+        @include respond-to(mobile){
+            width: 60px;
+            height: 60px;
+        }
             i{
                 color: $secondary-color;
                 font-size: 18px;

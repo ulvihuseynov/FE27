@@ -9,10 +9,16 @@
   h3 {
     font-size: 32px;
     font-weight: $fw-400;
+    @include respond-to(mobile){
+     font-size: 28px;
+    }
   }
   p {
     width: 50%;
     margin: 2% 0 4% 0;
     color: $icon-color;
+    @include respond-to(tablet){
+      width: 100%;
+    }
   }
 }
